@@ -9,12 +9,30 @@ export const Container = styled.div`
   grid-template-areas:
     "header"
     "content";
-
-  background-color: ${({ theme }) => theme.COLORS.GRADIENT_BACKGROUND};
 `;
 
 export const Content = styled.main`
+  grid-area: content;
+  padding: 2rem;
+  padding-bottom: 6rem;
+  background: ${({ theme }) => theme.COLORS.GRADIENT_BACKGROUND};
+
   .ebook {
-    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    img {
+      height: 40rem;
+      width: auto;
+    }
   }
+
+  p {
+    margin-bottom: 5rem;
+  }
+
 `;

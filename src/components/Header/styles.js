@@ -21,7 +21,7 @@ export const Container = styled.header`
   }
 
   button {
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 2rem;
     font-weight: 600;
     background: ${({ theme }) => theme.COLORS.BLUE};
     color: ${({ theme }) => theme.COLORS.WHITE};

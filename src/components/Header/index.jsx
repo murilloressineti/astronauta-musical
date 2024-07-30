@@ -17,7 +17,7 @@ export function Header() {
       <DesktopMenu>
         <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
         <Link to="/sobre-mim" className={location.pathname === '/sobre-mim' ? 'active' : ''}>Sobre mim</Link>
-        <a href="https://go.hotmart.com/F74338381E?dp=1" target='blank'><button>Download</button></a>
+        <a href="https://go.hotmart.com/F74338381E?dp=1" target='blank'><button>Comprar</button></a>
       </DesktopMenu>
       <MenuIcon onClick={toggleMenu}>
         <span />
@@ -28,7 +28,7 @@ export function Header() {
         <Menu>
           <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
           <Link to="/sobre-mim" className={location.pathname === '/sobre-mim' ? 'active' : ''}>Sobre mim</Link>
-          <a href="https://go.hotmart.com/F74338381E?dp=1" target='blank'><button>Download</button></a>
+          <a href="https://go.hotmart.com/F74338381E?dp=1" target='blank'><button>Comprar</button></a>
         </Menu>
       )}
     </Container>

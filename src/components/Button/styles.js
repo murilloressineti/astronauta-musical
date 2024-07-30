@@ -23,4 +23,8 @@ export const Container = styled.button `
     transform: scale(1.05);
     box-shadow: 0 0.4rem 0.8rem rgba(83, 162, 233, 0.7);
   }
+
+  a {
+    color: ${({ theme }) => theme.COLORS.WHITE};
+  }
 `;

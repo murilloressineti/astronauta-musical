@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.header`
   grid-area: header;
@@ -23,20 +23,23 @@ export const Container = styled.header`
   button {
     padding: 0.5rem 1rem;
     font-weight: 600;
-
     background: ${({ theme }) => theme.COLORS.BLUE};
     color: ${({ theme }) => theme.COLORS.WHITE};
-
     border-radius: 4rem;
     border: none;
     cursor: pointer;
-
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
       transform: scale(1.05);
       box-shadow: 0 0.4rem 0.8rem rgba(83, 162, 233, 0.7);
     }
+  }
+
+  @media (min-width: 769px) {
+    box-shadow: none;
+    padding: 5.5rem 10rem 4.5rem;
+    background: none;
   }
 `;
 
@@ -90,11 +93,15 @@ export const Menu = styled.nav`
     padding: 0.6rem 0;
     width: 100%;
     text-align: left;
+    position: relative;
     transition: color 0.3s;
 
+    &.active {
+      color: ${({ theme }) => theme.COLORS.BLUE};
+    }
+    
     &:hover {
       color: ${({ theme }) => theme.COLORS.BLUE};
-      text-decoration: underline;
     }
   }
 
@@ -105,18 +112,33 @@ export const Menu = styled.nav`
 
 export const DesktopMenu = styled.nav`
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 
   a {
     font-size: 1.6rem;
     font-weight: 600;
     text-decoration: none;
     color: ${({ theme }) => theme.COLORS.BLACK};
+    position: relative;
     transition: color 0.3s;
+
+    &.active {
+      color: ${({ theme }) => theme.COLORS.BLUE};
+    }
+
+    &.active::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2rem;
+      width: 100%;
+      height: 0.2rem;
+      background-color: ${({ theme }) => theme.COLORS.BLUE};
+      border-radius: 0.2rem;
+    }
 
     &:hover {
       color: ${({ theme }) => theme.COLORS.BLUE};
-      text-decoration: underline;
     }
   }
 

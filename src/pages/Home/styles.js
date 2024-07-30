@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const Content = styled.main`
   grid-area: content;
-  padding: 2rem;
+  padding: 2rem 2rem;
   padding-bottom: 6rem;
   background: ${({ theme }) => theme.COLORS.GRADIENT_BACKGROUND};
 
@@ -32,7 +32,12 @@ export const Content = styled.main`
   }
 
   p {
-    margin-bottom: 5rem;
+    margin-bottom: 5.5rem;
   }
 
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;

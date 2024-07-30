@@ -14,5 +14,32 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.main`
+  grid-area: content;
+  padding: 2rem 2rem;
+  padding-bottom: 6rem;
+  background: ${({ theme }) => theme.COLORS.GRADIENT_BACKGROUND};
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    img {
+      height: 40rem;
+      width: auto;
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.COLORS.BLUE};
+  }
+
+  p {
+    margin-bottom: 5.5rem;
+  }
 
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.button`
+export const Container = styled.button `
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,7 +10,7 @@ export const Container = styled.button`
   font-weight: 700;
 
   background: ${({ theme }) => theme.COLORS.BUTTON_BACKGROUND};
-  box-shadow: 0 0.4rem 0.8rem rgba(83, 162, 233, 0.5);;
+  box-shadow: 0 0.4rem 0.8rem rgba(83, 162, 233, 0.5);
   color: ${({ theme }) => theme.COLORS.WHITE};
 
   border-radius: 4rem;

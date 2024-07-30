@@ -15,6 +15,10 @@ export default createGlobalStyle`
     font-family: "Montserrat", sans-serif;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   h1 {
     font-size: 3.6rem;
     margin-bottom: 2rem;

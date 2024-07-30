@@ -1,17 +1,20 @@
+import React from 'react'; 
 import { Container, Content } from "./styles";
 import { Header } from "../../components/Header";
 import { SocialButtons } from "../../components/SocialButtons";
 
 import imageBackground from "../../assets/capa-ebook.png";
 
-export function Home() {
+export function AboutMe() {
   return (
     <Container>
       <Header />
 
       <Content>
         <section>
-          <img src={imageBackground} alt="" />
+          <div className="image">
+            <img src={imageBackground} alt="" />
+          </div>
 
           <h1>Sobre mim</h1>
 

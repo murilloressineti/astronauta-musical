@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: ${({ theme }) => theme.COLORS.GRADIENT_BACKGROUND};
 
@@ -44,5 +44,24 @@ export const Content = styled.main`
 
   @media (min-width: 769px) {
     padding: 0 10rem 10rem;
+
+    .ebook {
+      img {
+        height: 58rem;
+      }
+    }
+
+    h1 {
+      font-size: 5.6rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    .buttons {
+      flex-direction: column;
+      gap: 17rem;
+    }
   }
 `;

@@ -13,20 +13,26 @@ export function Home() {
 
       <Content>
         <section>
-          <div className="ebook">
-            <img src={imageBackground} alt="" />
-          </div>
+          <figure className="ebook">
+            <img src={imageBackground} alt="Capa do eBook sobre guitarra" />
+          </figure>
 
-          <h1>Domine a guitarra: adquira o guia <span>definitivo</span></h1>
+          <header>
+            <h1>
+              Domine a guitarra: adquira o guia <span>definitivo</span>
+            </h1>
+          </header>
 
-          <p>
-            Comece sua jornada musical hoje e desvende todos os segredos da guitarra com nosso guia completo!
-          </p>
+          <article>
+            <p>
+              Comece sua jornada musical hoje e desvende todos os segredos da guitarra com nosso guia completo!
+            </p>
+          </article>
 
-          <div className="buttons">
+          <footer className="buttons">
             <Button />
             <SocialButtons />
-          </div>
+          </footer>
         </section>
       </Content>
     </Container>

@@ -16,7 +16,7 @@ export const Container = styled.div`
 
 export const Content = styled.main`
   grid-area: content;
-  padding: 2rem 2rem;
+  padding: 2rem;
   padding-bottom: 6rem;
   background: ${({ theme }) => theme.COLORS.GRADIENT_BACKGROUND};
 
@@ -25,8 +25,7 @@ export const Content = styled.main`
     justify-content: center;
     align-items: center;
     
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 
     img {
       height: 40rem;
@@ -40,7 +39,33 @@ export const Content = styled.main`
   }
 
   p {
-    margin-bottom: 5.5rem;
+    color: ${({ theme }) => theme.COLORS.BLACK};
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  blockquote {
+    margin: 3rem 0;
+    padding-left: 2rem;
+    border-left: .4rem solid ${({ theme }) => theme.COLORS.BLUE};
+
+    p {
+      font-style: italic;
+      font-weight: bold;
+      color: ${({ theme }) => theme.COLORS.GRAY_70};
+    }
+
+    footer {
+      font-size: 1.6rem;
+      font-weight: bold;
+      text-align: right;
+      color: ${({ theme }) => theme.COLORS.GRAY_70};
+      margin-top: 1rem;
+    }
+  }
+
+  button {
+    margin-top: 5.5rem;
   }
 
   @media (min-width: 769px) {

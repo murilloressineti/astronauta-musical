@@ -29,6 +29,7 @@ export const Container = styled.header`
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
 
     &:hover {
       transform: scale(1.05);
@@ -40,6 +41,10 @@ export const Container = styled.header`
     box-shadow: none;
     padding: 5.5rem 10rem 4.5rem;
     background: none;
+
+    .logo {
+      width: 6rem;
+    }
   }
 `;
 

@@ -28,18 +28,21 @@ export const Content = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 
     img {
-      height: 40rem;
-      width: auto;
+      width: 100%;
+      height: auto;
     }
   }
 
   .text-content {
     text-align: left;
+  }
+
+  .intro-container {
+    width: 100%;
+    max-width: 60rem;
   }
 
   p {
@@ -53,7 +56,7 @@ export const Content = styled.main`
   }
 
   @media (min-width: 769px) {
-    padding: 0 10rem 10rem;
+    padding: 0 10rem;
 
     section {
       margin-top: 5rem;
@@ -66,15 +69,10 @@ export const Content = styled.main`
     .ebook {
       flex: 1;
       justify-content: flex-end;
-
-      img {
-        height: 50rem;
-      }
     }
 
     .text-content {
       flex: 1;
-      width: 60rem;
     }
 
     h1 {
@@ -89,5 +87,20 @@ export const Content = styled.main`
       flex-direction: column;
       max-width: 18rem;
     }
+
+    .hidden {
+      display: none;
+      visibility: hidden;
+    }
   }
 `;
+
+export const Footer = styled.footer`
+  display: none;
+
+  @media (min-width: 769px) {
+    background: ${({ theme }) => theme.COLORS.GRADIENT_BACKGROUND};
+    display: flex;
+    padding: 0 10rem 5rem;
+  }
+`

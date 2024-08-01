@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Content } from "./styles";
+import { Container, Content, Footer } from "./styles";
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { SocialButtons } from "../../components/SocialButtons";
@@ -20,26 +20,32 @@ export function Home() {
           </figure>
 
           <div className="text-content">
-            <div className="intro-text">
-              <h1>
-                Domine a guitarra: adquira o guia <span>definitivo</span>
-              </h1>
+            <div className="intro-container">
+              <div className="intro-text">
+                <h1>
+                  Domine a guitarra: adquira o guia <span>definitivo</span>
+                </h1>
+              </div>
+
+              <article>
+                <p>
+                  Comece sua jornada musical hoje e desvende todos os segredos
+                  da guitarra com nosso guia completo!
+                </p>
+              </article>
             </div>
 
-            <article>
-              <p>
-                Comece sua jornada musical hoje e desvende todos os segredos da
-                guitarra com nosso guia completo!
-              </p>
-            </article>
-
-            <footer className="buttons">
+            <div className="buttons">
               <Button />
-              <SocialButtons />
-            </footer>
+              <SocialButtons className="hidden"/>
+            </div>
           </div>
         </section>
       </Content>
+
+      <Footer>
+        <SocialButtons />
+      </Footer>
     </Container>
   );
 }

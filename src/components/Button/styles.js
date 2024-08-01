@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.button `
+export const Container = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  
+
   padding: 1rem 2.5rem;
   font-weight: 700;
 

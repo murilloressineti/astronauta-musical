@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { useLocation, Link } from 'react-router-dom';
-import { Container, MenuIcon, Menu, DesktopMenu } from './styles';
-import logo from '../../assets/logo.png';
+import React, { useState } from "react";
+import { useLocation, Link } from "react-router-dom";
+import { Container, MenuIcon, Menu, DesktopMenu } from "./styles";
+import logo from "../../assets/logo.png";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +13,22 @@ export function Header() {
 
   return (
     <Container>
-      <Link to="/"><img src={logo} alt="Logo" className="logo" /></Link>
+      <Link to="/">
+        <img src={logo} alt="Logo" className="logo" />
+      </Link>
       <DesktopMenu>
-        <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
-        <Link to="/sobre-mim" className={location.pathname === '/sobre-mim' ? 'active' : ''}>Sobre mim</Link>
-        <a href="https://go.hotmart.com/F74338381E?dp=1" target='blank'><button>Comprar</button></a>
+        <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+          Home
+        </Link>
+        <Link
+          to="/sobre-mim"
+          className={location.pathname === "/sobre-mim" ? "active" : ""}
+        >
+          Sobre mim
+        </Link>
+        <a href="https://go.hotmart.com/F74338381E?dp=1" target="blank">
+          <button>Comprar</button>
+        </a>
       </DesktopMenu>
       <MenuIcon onClick={toggleMenu}>
         <span />
@@ -26,9 +37,18 @@ export function Header() {
       </MenuIcon>
       {isOpen && (
         <Menu>
-          <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
-          <Link to="/sobre-mim" className={location.pathname === '/sobre-mim' ? 'active' : ''}>Sobre mim</Link>
-          <a href="https://go.hotmart.com/F74338381E?dp=1" target='blank'><button>Comprar</button></a>
+          <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+            Home
+          </Link>
+          <Link
+            to="/sobre-mim"
+            className={location.pathname === "/sobre-mim" ? "active" : ""}
+          >
+            Sobre mim
+          </Link>
+          <a href="https://go.hotmart.com/F74338381E?dp=1" target="blank">
+            <button>Comprar</button>
+          </a>
         </Menu>
       )}
     </Container>

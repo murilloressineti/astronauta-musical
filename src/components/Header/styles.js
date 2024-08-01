@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.header`
   grid-area: header;
@@ -104,7 +104,7 @@ export const Menu = styled.nav`
     &.active {
       color: ${({ theme }) => theme.COLORS.BLUE};
     }
-    
+
     &:hover {
       color: ${({ theme }) => theme.COLORS.BLUE};
     }
@@ -132,7 +132,7 @@ export const DesktopMenu = styled.nav`
     }
 
     &.active::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       bottom: -2rem;

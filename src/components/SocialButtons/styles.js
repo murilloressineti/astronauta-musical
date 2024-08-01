@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -29,8 +29,8 @@ export const Container = styled.div `
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0.4rem 0.8rem rgba(83, 162, 233, 0.7);
-  }
+      transform: scale(1.05);
+      box-shadow: 0 0.4rem 0.8rem rgba(83, 162, 233, 0.7);
+    }
   }
 `;

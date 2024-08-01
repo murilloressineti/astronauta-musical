@@ -18,6 +18,12 @@ export const Content = styled.main`
   padding-bottom: 6rem;
   background: ${({ theme }) => theme.COLORS.GRADIENT_BACKGROUND};
 
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .ebook {
     display: flex;
     justify-content: center;
@@ -30,6 +36,10 @@ export const Content = styled.main`
       height: 40rem;
       width: auto;
     }
+  }
+
+  .text-content {
+    text-align: left;
   }
 
   p {
@@ -45,10 +55,27 @@ export const Content = styled.main`
   @media (min-width: 769px) {
     padding: 0 10rem 10rem;
 
+    section {
+      margin-top: 5rem;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
     .ebook {
+      flex: 1;
+      justify-content: flex-end;
+
       img {
-        height: 58rem;
+        height: 50rem;
       }
+    }
+
+    .text-content {
+      flex: 1;
+      text-align: left;
+      width: 60rem;
     }
 
     h1 {
@@ -61,7 +88,8 @@ export const Content = styled.main`
 
     .buttons {
       flex-direction: column;
-      gap: 17rem;
+      max-width: 18rem;
     }
+
   }
 `;

@@ -28,7 +28,7 @@ export const Content = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     margin-top: 5rem;
     margin-bottom: 5rem;
 
@@ -74,7 +74,6 @@ export const Content = styled.main`
 
     .text-content {
       flex: 1;
-      text-align: left;
       width: 60rem;
     }
 
@@ -90,6 +89,5 @@ export const Content = styled.main`
       flex-direction: column;
       max-width: 18rem;
     }
-
   }
 `;

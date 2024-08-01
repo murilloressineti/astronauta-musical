@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: ${({ theme }) => theme.COLORS.GRADIENT_BACKGROUND};
 
@@ -20,16 +20,24 @@ export const Content = styled.main`
   padding-bottom: 6rem;
   background: ${({ theme }) => theme.COLORS.GRADIENT_BACKGROUND};
 
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
   .image {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     margin: 5rem 0;
 
     img {
-      height: 40rem;
-      width: auto;
+      width: 80%;
+      height: auto;
+      border-radius: 2rem;
+      box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.2);
     }
   }
 
@@ -55,7 +63,7 @@ export const Content = styled.main`
       color: ${({ theme }) => theme.COLORS.GRAY_70};
     }
 
-    footer {
+    cite {
       font-size: 1.6rem;
       font-weight: bold;
       text-align: right;
@@ -65,10 +73,34 @@ export const Content = styled.main`
   }
 
   button {
-    margin-top: 5.5rem;
+    margin-top: 2rem;
   }
 
   @media (min-width: 769px) {
     padding: 0 10rem 10rem;
+
+    section {
+      margin-top: 10rem;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 10rem;
+    }
+
+    .text-content {
+      flex: 3;
+      margin-right: 2rem;
+    }
+
+    .image {
+      flex: 2;
+      margin: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
-`;
+`

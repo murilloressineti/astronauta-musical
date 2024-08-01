@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from "react";
 import { Container, Content } from "./styles";
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
@@ -10,23 +10,26 @@ export function Home() {
   return (
     <Container>
       <Header />
-
       <Content>
         <section>
           <figure className="ebook">
-            <img src={imageBackground} alt="Capa do eBook - O Universo da Guitarra" />
+            <img
+              src={imageBackground}
+              alt="Capa do eBook - O Universo da Guitarra"
+            />
           </figure>
 
           <div className="text-content">
-            <header>
+            <div className="intro-text">
               <h1>
                 Domine a guitarra: adquira o guia <span>definitivo</span>
               </h1>
-            </header>
+            </div>
 
             <article>
               <p>
-                Comece sua jornada musical hoje e desvende todos os segredos da guitarra com nosso guia completo!
+                Comece sua jornada musical hoje e desvende todos os segredos da
+                guitarra com nosso guia completo!
               </p>
             </article>
 

@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <Container>
-      <img src={logo} alt="Logo" className="logo" />
+      <Link to="/"><img src={logo} alt="Logo" className="logo" /></Link>
       <DesktopMenu>
         <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
         <Link to="/sobre-mim" className={location.pathname === '/sobre-mim' ? 'active' : ''}>Sobre mim</Link>

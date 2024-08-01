@@ -89,8 +89,8 @@ export const Content = styled.main`
     }
 
     .hidden {
-      display: none;
       visibility: hidden;
+      overflow: hidden;
     }
   }
 `;
@@ -103,4 +103,4 @@ export const Footer = styled.footer`
     display: flex;
     padding: 0 10rem 5rem;
   }
-`
+`;

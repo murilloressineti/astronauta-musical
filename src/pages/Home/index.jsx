@@ -23,7 +23,7 @@ export function Home() {
             <div className="intro-container">
               <div className="intro-text">
                 <h1>
-                  Domine a guitarra: adquira o guia <span>definitivo</span>
+                  Domine a guitarra: adquira o guia <span>definitivo!</span>
                 </h1>
               </div>
 
@@ -37,7 +37,7 @@ export function Home() {
 
             <div className="buttons">
               <Button />
-              <SocialButtons className="hidden"/>
+              <div className="hidden"><SocialButtons/></div>
             </div>
           </div>
         </section>
